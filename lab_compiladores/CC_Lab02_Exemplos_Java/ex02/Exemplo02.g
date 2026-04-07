@@ -1,19 +1,17 @@
-grammar Exemplo01;
+grammar Exemplo02;
 
 begin:
-  expr
+  (expr SEMI)+
 ;
 
 expr:
-  INT_VAL op INT_VAL SEMI
-| INT_VAL SEMI
-;
-
-op:
-  EQ | LT | GT
+  expr PLUS expr
+| expr (LT | GT | EQ) expr
+| INT_VAL
 ;
 
 INT_VAL : [0-9]+ ;
+PLUS    : '+'    ;
 LT      : '<'    ;
 GT      : '>'    ;
 EQ      : '='    ;
