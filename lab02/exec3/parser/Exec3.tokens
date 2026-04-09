@@ -1,0 +1,15 @@
+WS=1
+IF=2
+ELSE=3
+OTHER=4
+LPAREN=5
+RPAREN=6
+ZERO=7
+ONE=8
+'if'=2
+'else'=3
+'other'=4
+'('=5
+')'=6
+'0'=7
+'1'=8

@@ -1,0 +1,7 @@
+LITERAL=1
+LPAREN=2
+RPAREN=3
+WS=4
+'a'=1
+'('=2
+')'=3
